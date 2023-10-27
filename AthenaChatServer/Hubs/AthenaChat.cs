@@ -4,7 +4,7 @@ namespace AthenaChatServer.Hubs
 {
     public class AthenaChat : Hub
     {
-        // SendMessage() is called by client, when it has to comm.
+        // SendMessage() is called by client, when it has to communicate.
         // RecieveMessage() is called when server needs to notify clients
         public async Task SendMessage(string userName, string text)
         {
