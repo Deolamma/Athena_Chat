@@ -10,10 +10,16 @@ body{
 .main-container{
     background-color:#1F2263;
    padding: 10%; 
-   
-    
+   height: 100%;
+    width: 100%;
     border-radius: 1%;
 
+}
+.peer-icon{
+
+    cursor: pointer;
+color: #000;
+width: 24px;
 }
 h1{
     text-align: center;
