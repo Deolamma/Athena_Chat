@@ -1,4 +1,4 @@
-*{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,37 +65,44 @@ p{
          width: 24px;
          position: relative;
          top: 40px;
-      }
+      }*/
      
 
 
 
-      /* femi css for the message chat */
+      /* STYLING FOR THE GROUP CHAT */
 
-
-
-      
       *{
         margin: 0;
         padding: 0;
-        box-sizing: 0;
+        box-sizing: border-box;
     }
     
     
     .container{
         width: 100%;
         height: 100vh;
-        background: rgb(2, 253, 245);
-        background: linear-gradient(90deg, rgba(2,253, 245, 1), 19%, rgba(252,134,255,1), 100%);
-        
+        background: rgb(255, 255, 255);
+       /* background: linear-gradient(90deg, rgba(2,253, 245, 1), 19%, rgba(252,134,255,1), 100%);
+       */ 
     }
     
     .header{
-        background: beige;
+        background: rgb(255, 255, 255);;
         font-size: 26px;
-        text-align: center;
+        text-align: left;
         padding: 10px;
-    
+         
+    }
+    h3{
+        font-family: "Monoton";
+        color:#1F2263 ;
+        border-bottom: 1px solid #B8B8B8;
+        
+
+    }
+     h3 span{
+        color: #000;
     }
 
     ::-webkit-scrollbar{
@@ -103,12 +110,12 @@ p{
     }
 
     ::-webkit-scrollbar-track{
-        box-shadow: inset 0 0 5px grey;
+        box-shadow: inset 0 0 5px #B8B8B8;
         border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb{
-        background: rgb(135, 1, 145);
+        background: rgb(31,34,99);
         border-radius: 10px;
     }
     
@@ -116,8 +123,8 @@ p{
         height: 400px;
         width: 90%;
         margin: auto;
-        border: 1px solid;
-        border-radius: 10px;
+       /* border: 1px solid;
+        border-radius: 10px;*/
         
         
     }
@@ -125,19 +132,20 @@ p{
     .msg-box{
         padding: 10px;
         width: 35%;
-        border: 1px solid black;
-        font-size: 30px;
+        border-top:3px solid #B8B8B8 ;
+        font-size: 20px;
         margin: 20px 15px;
         border-radius: 5px;
         word-break: break-all;
         clear: both;
         overflow: auto;
+        font-family: "Roboto";
         
     }
     
     .received{
         float: left;
-        background-color: rgb(255, 252, 214);
+        background-color:  #B8B8B8;
     }
     
     .send{
@@ -147,7 +155,7 @@ p{
     .input-section{
         height: 60px;
         width: 90%;
-        border: 1px solid black;
+        
         margin: auto;
         margin-top: 10px;
         display: flex;
@@ -160,28 +168,38 @@ p{
         width: 90%;
         padding: 10px;
         font-size: 20px;
-        border: 1px solid #969696;
+        border: 1px solid #1F2263;
         border-radius: 10px;
         margin: 0 5px;
-        text-decoration: yellow;
+        position: relative;
+        left: -30px;
+      /*  text-decoration: yellow;*/
     
     }
     .input:focus{
-        border: 1px solid #727272;
+       /* border: 1px solid #727272;*/
         outline: none;
     }
     
     .btn{
         padding: 10px 15px;
-        font-size: 20px;
+        font-size: 15px;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         color: white;
+        background-color: #1F2263;
         margin: 0px 5px;
+        position: relative;
+        left: -15px;
     
     }
+    .send-icon{
+        color: #fff;
+         cursor: pointer;
+         
+    }
     .btn:hover{
-        background: yellow
+        background: #000;
     }
      
